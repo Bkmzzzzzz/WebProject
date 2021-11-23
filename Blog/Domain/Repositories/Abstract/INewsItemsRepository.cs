@@ -9,9 +9,9 @@ namespace Blog.Domain.Repositories.Abstract
 {
     public interface INewsItemsRepository
     {
-        IQueryable<NewsItem> GetServiceItems();
-        NewsItem GetServiceItemById(Guid id);
-        void SaveServiceItem(NewsItem entity);
-        void DeleteServiceItem(Guid id);
+        IQueryable<NewsItem> GetNewsItems();
+        NewsItem GetNewsItemById(Guid id);
+        void SaveNewsItem(NewsItem entity);
+        void DeleteNewsItem(Guid id);
     }
 }

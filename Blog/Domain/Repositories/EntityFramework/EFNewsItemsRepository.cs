@@ -16,17 +16,17 @@ namespace Blog.Domain.Repositories.EntityFramework
             this.context = context;
         }
 
-        public IQueryable<NewsItem> GetServiceItems()
+        public IQueryable<NewsItem> GetNewsItems()
         {
             return context.NewsItems;
         }
 
-        public NewsItem GetServiceItemById(Guid id)
+        public NewsItem GetNewsItemById(Guid id)
         {
             return context.NewsItems.FirstOrDefault(x => x.Id == id);
         }
 
-        public void SaveServiceItem(NewsItem entity)
+        public void SaveNewsItem(NewsItem entity)
         {
             if (entity.Id == default)
                 context.Entry(entity).State = EntityState.Added;
@@ -35,7 +35,7 @@ namespace Blog.Domain.Repositories.EntityFramework
             context.SaveChanges();
         }
 
-        public void DeleteServiceItem(Guid id)
+        public void DeleteNewsItem(Guid id)
         {
             context.NewsItems.Remove(new NewsItem() { Id = id });
             context.SaveChanges();
