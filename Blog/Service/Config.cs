@@ -1,0 +1,9 @@
+﻿namespace Blog.Service
+{
+    public class Config
+    {
+        public static string ConnectionString { get; set; }
+        public static string BlogName { get; set; }
+        public static string BlogEmail { get; set; }
+    }
+}
