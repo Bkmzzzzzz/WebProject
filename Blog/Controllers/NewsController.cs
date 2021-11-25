@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 using Blog.Domain;
+using System.Threading.Tasks;
 
 namespace MyCompany.Controllers
 {
@@ -23,5 +24,6 @@ namespace MyCompany.Controllers
             ViewBag.TextField = dataManager.TextFields.GetTextFieldByCodeWord("PageNews");
             return View(dataManager.NewsItems.GetNewsItems());
         }
+       
     }
 }

@@ -29,11 +29,7 @@ namespace Blog.Domain.Entities
         [Display(Name = "SEO метатег Title")]
         public string MetaTitle { get; set; }
 
-        [Display(Name = "SEO метатег Description")]
-        public string MetaDescription { get; set; }
-
-        [Display(Name = "SEO метатег Keywords")]
-        public string MetaKeywords { get; set; }
+        
 
         [DataType(DataType.Time)]
         public DateTime DateAdded { get; set; }

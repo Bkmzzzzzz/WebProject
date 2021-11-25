@@ -28,11 +28,7 @@ namespace Blog.Migrations
                     b.Property<DateTime>("DateAdded")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("MetaDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MetaKeywords")
-                        .HasColumnType("nvarchar(max)");
+                    
 
                     b.Property<string>("MetaTitle")
                         .HasColumnType("nvarchar(max)");
@@ -68,11 +64,7 @@ namespace Blog.Migrations
                     b.Property<DateTime>("DateAdded")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("MetaDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MetaKeywords")
-                        .HasColumnType("nvarchar(max)");
+                  
 
                     b.Property<string>("MetaTitle")
                         .HasColumnType("nvarchar(max)");

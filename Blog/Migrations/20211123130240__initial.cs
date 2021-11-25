@@ -53,8 +53,7 @@ namespace Blog.Migrations
                     Id = table.Column<Guid>(nullable: false),
                     TitleImagePath = table.Column<string>(nullable: true),
                     MetaTitle = table.Column<string>(nullable: true),
-                    MetaDescription = table.Column<string>(nullable: true),
-                    MetaKeywords = table.Column<string>(nullable: true),
+                    
                     DateAdded = table.Column<DateTime>(nullable: false),
                     Title = table.Column<string>(nullable: false),
                     Subtitle = table.Column<string>(nullable: true),
@@ -73,8 +72,7 @@ namespace Blog.Migrations
                     Subtitle = table.Column<string>(nullable: true),
                     TitleImagePath = table.Column<string>(nullable: true),
                     MetaTitle = table.Column<string>(nullable: true),
-                    MetaDescription = table.Column<string>(nullable: true),
-                    MetaKeywords = table.Column<string>(nullable: true),
+                    
                     DateAdded = table.Column<DateTime>(nullable: false),
                     CodeWord = table.Column<string>(nullable: false),
                     Title = table.Column<string>(nullable: true),
@@ -203,7 +201,7 @@ namespace Blog.Migrations
 
             migrationBuilder.InsertData(
                 table: "TextFields",
-                columns: new[] { "Id", "CodeWord", "DateAdded", "MetaDescription", "MetaKeywords", "MetaTitle", "Subtitle", "Text", "Title", "TitleImagePath" },
+                columns: new[] { "Id", "CodeWord", "DateAdded", "MetaTitle", "Subtitle", "Text", "Title", "TitleImagePath" },
                 values: new object[,]
                 {
                     { new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"), "PageIndex", new DateTime(2021, 11, 23, 13, 2, 39, 710, DateTimeKind.Utc).AddTicks(3097), null, null, null, null, "Содержание заполняется администратором", "Главная", null },
