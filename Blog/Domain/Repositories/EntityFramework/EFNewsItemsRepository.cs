@@ -18,7 +18,12 @@ namespace Blog.Domain.Repositories.EntityFramework
 
         public IQueryable<NewsItem> GetNewsItems()
         {
-            return context.NewsItems;
+           
+                return context.NewsItems;
+        }
+        public IQueryable<NewsItem> GetSideBarNewsItems()
+        {
+            return context.NewsItems.Take(3);
         }
 
         public NewsItem GetNewsItemById(Guid id)

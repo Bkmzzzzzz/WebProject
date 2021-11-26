@@ -15,7 +15,7 @@ namespace Blog.Models.ViewComponents
 
         public Task<IViewComponentResult> InvokeAsync()
         {
-            return Task.FromResult((IViewComponentResult) View("Default", dataManager.NewsItems.GetNewsItems()));
+            return Task.FromResult((IViewComponentResult) View("Default", dataManager.NewsItems.GetSideBarNewsItems()));
         }
     }
 }

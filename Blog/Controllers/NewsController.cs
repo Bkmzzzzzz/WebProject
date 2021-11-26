@@ -23,7 +23,11 @@ namespace MyCompany.Controllers
 
             ViewBag.TextField = dataManager.TextFields.GetTextFieldByCodeWord("PageNews");
             return View(dataManager.NewsItems.GetNewsItems());
+
+
+           
         }
+
        
     }
 }
